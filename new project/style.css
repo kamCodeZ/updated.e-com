@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+--main:#99ccff;
+--sec:#9f7501;
+--whi:#f2f2f2;
+--blue-head:#33adff;
+--hov:#89bcef;
+} 
+header{
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+background-color: var(--main);
+padding: 1%;
+}
+#search{
+    width:300px;
+    background-color: transparent;
+    color:black;
+    border:none;
+    border-bottom: solid 5px var(--sec);
+    color: var(--sec);
+    padding: 10px;
+    padding-left: 0%;
+    font-family: monospace;
+    font-size:1.2em;
+    border-radius: 10px 0 10px 0;
+    margin-left: 2px;
+    outline: none;
+}
+#search:hover{
+    width:300px;
+    background-color: transparent;
+    color:black;
+    border:none;
+    border-bottom: solid 5px #ad7f01d0;
+    color: var(--sec);
+    padding: 10px;
+    padding-left: 0%;
+    transition: 5s;
+    font-family: monospace;
+    border-radius: 10px 0 10px 0;
+    outline: none;
+}
+#search:focus{
+    width:330px;
+    background-color: transparent;
+    color:black;
+    border:none;
+    border-bottom: solid 5px #ad7f01d0;
+    color: var(--sec);
+    padding: 10px;
+    padding-left: 0%;
+    transition: 2s;
+    font-family: monospace;
+    border-radius: 10px 0 10px 0;
+    outline: none;
+}
+#heading{
+    font-size: 2em;
+    font-family:cursive;
+    text-align: center;
+    color: var(--whi);
+    text-shadow: black 2px 5px 4px;
+}
+.names{
+    color: var(--blue-head);
+    text-shadow: black 2px 5px 4px;
+}
+#log{
+    color:var(--sec);
+    display: inline-block;
+}
+#search-icon{
+    color:var(--sec);
+    margin-left: 60px;
+    font-size: 1.3em;
+    padding-top: 10px;
+}
+.log{
+    padding-left: 10px;
+}
+ .head-nav{
+    display: flex;
+    margin-left: 35px;
+} 
+.icon{
+    color:var(--sec);
+    font-size: 1.4em;
+    text-decoration: none;
+    padding: 12px;
+    margin-left: 10%;
+    font-family: monospace;
+}
+.icon:hover{
+    color:var(--sec);
+    font-size: 1.4em;
+    text-decoration: none;
+    padding: 12px;
+    border-radius: 40px;
+    margin-left: 10%;
+    transition:1s;
+    background-color: #90c6fc;
+}
+footer{
+    background-color: var(--main);
+    padding: 15px;
+    margin-top:35%;
+}
+#last{
+    font-style: italic;
+    color:white;
+    font-size: 1.4em; 
+}
+nav{
+display: grid;
+grid-template-columns: repeat(4, 1fr);
+background-color: var(--sec);
+padding: 1.2%;
+}
+.navv{
+    color:var(--whi);
+    text-decoration: none;
+    font-size: 1.4em;
+}
+.navv:hover{
+    color:var(--whi);
+    text-decoration: none;
+    font-size: 1.7em;
+    transition: .5s;
+}
+.nav-nav{
+    margin-left: 40%;
+}

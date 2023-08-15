@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background-image: url(back.webp);
+            background-repeat: no-repeat;
+            background-size: 100%;
+            background-position: right bottom;
+        }
+        
+        .tit {
+            color: var(--blue-hea);
+            font-size: 1.2em;
+            font-family: cursive;
+        }
+        
+        p {
+            font-family: monospace;
+            font-size: 1.6em;
+            margin-left: 4%;
+            margin-top: 5%;
+            margin-right: 45%;
+        }
+        
+        #shopping {
+            color: var(--sec);
+            background-color: var(--main);
+            border: none;
+            padding: 15px;
+            font-size: 1.2em;
+            text-decoration: none;
+            font-family: monospace;
+            border-radius: 50px;
+            margin-left: 7%;
+        }
+        
+        #shopping:hover {
+            color: var(--sec);
+            background-color: var(--hov);
+            transition: .8s;
+            border: none;
+            padding: 15px;
+            font-size: 1.25em;
+            text-decoration: none;
+            font-family: monospace;
+            border-radius: 50px;
+            margin-left: 7%;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="search">
+            <i class="fa fa-search" id="search-icon"></i>
+            <input id="search" type="search" placeholder="Search">
+        </div>
+
+        <div class="Logo">
+            <h1 id="heading"><span class="names">Harmonic</span> Shopping Center</h1>
+        </div>
+
+        <div class="head-nav">
+            <a href="log.html" class="icon"><i class="fa fa-user" aria-hidden="true" ></i><span class="log">Log-In</span></a>
+            <a href="cart.html" class="icon"><i class="fa fa-shopping-cart" aria-hidden="true" ></i><span class="log">Cart</span></a>
+        </div>
+    </header>
+    <nav>
+        <div class="nav-nav">
+            <a href="home.html" class="navv">Home</a>
+        </div>
+        <div class="nav-nav">
+            <a href="categories.html" class="navv">Categories</a>
+        </div>
+        <div class="nav-nav">
+            <a href="#" class="navv">F.A.Q</a>
+        </div>
+        <div class="nav-nav">
+            <a href="#" class="navv">Contact</a>
+        </div>
+    </nav>
+
+    <div class="area">
+        <p>Discover a world of irresistible treasures at <strong><span class="tit">Harmonic</span></strong> Shopping Center. From fashion to tech, find what delights you and indulge in seamless shopping that brings your desires to your doorstep.</p><br><br>
+        <a href="#" id="shopping">Start Shopping</a>
+    </div>
+
+    <footer>
+        <marquee>
+            <Span id="last">For More Inquires Message 08134151807 on Whatsapp</Span><a href="struc.html">structure</a></marquee>
+    </footer>
+</body>
+
+</html>

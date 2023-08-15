@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>register</title>
+    <style>
+        form {
+            margin-left: 25%;
+            margin-right: 25%;
+            margin-top: 10%;
+            border: none;
+            border-radius: 20px;
+            color: var(--sec);
+            background-color: var(--whi);
+            padding: 20px;
+            font-size: 1.5em;
+            font-family: monospace;
+        }
+        
+        input[type=text] {
+            border: none;
+            border-bottom: solid 2px var(--main);
+            width: 80%;
+            padding: 10px;
+            font-family: monospace;
+            color: var(--main);
+            font-size: 1.1em;
+            margin-right: 5%;
+            margin-left: 5%;
+            outline: none;
+        }
+        
+        input[type=text]:focus {
+            border: none;
+            border-right: solid 2px var(--main);
+            border-bottom: solid 2px var(--main);
+            width: 80%;
+            padding: 10px;
+            font-family: monospace;
+            color: var(--main);
+            font-size: 1.1em;
+            margin-right: 5%;
+            margin-left: 5%;
+            outline: none;
+            background-color: var(--whi);
+            transition: .7s;
+        }
+        
+        input[type=password] {
+            border: none;
+            border-bottom: solid 2px var(--main);
+            width: 90%;
+            padding: 10px;
+            font-family: monospace;
+            color: var(--main);
+            font-size: 1.1em;
+            margin-right: 5%;
+            margin-left: 5%;
+            outline: none;
+        }
+        
+        input[type=password]:focus {
+            border: none;
+            border-right: solid 2px var(--main);
+            border-bottom: solid 2px var(--main);
+            width: 90%;
+            padding: 10px;
+            font-family: monospace;
+            color: var(--main);
+            font-size: 1.1em;
+            margin-right: 5%;
+            margin-left: 5%;
+            outline: none;
+            background-color: var(--whi);
+            transition: .7s;
+        }
+        
+        #head {
+            font-family: monospace;
+            color: var(--main);
+            font-size: 2em;
+            text-align: center;
+        }
+        
+        #num {
+            border: none;
+            border-bottom: solid 2px var(--main);
+            padding: 10px;
+            font-family: monospace;
+            color: var(--main);
+            font-size: 1.1em;
+            outline: none;
+            background-color: white;
+            margin-left: 5%;
+        }
+        
+        #phone {
+            border: none;
+            border-bottom: solid 2px var(--main);
+            width: 55%;
+            padding: 10px;
+            font-family: monospace;
+            color: var(--main);
+            font-size: 1.1em;
+            outline: none;
+        }
+        
+        #phone:focus {
+            border: none;
+            border-right: solid 2px var(--main);
+            border-bottom: solid 2px var(--main);
+            width: 55%;
+            padding: 10px;
+            font-family: monospace;
+            color: var(--main);
+            font-size: 1.1em;
+            outline: none;
+            background-color: var(--whi);
+            transition: .7s;
+        }
+        
+        #gender {
+            border: none;
+            border-bottom: solid 2px var(--main);
+            width: 90%;
+            padding: 10px;
+            font-family: monospace;
+            color: var(--main);
+            font-size: 1.1em;
+            margin-right: 5%;
+            margin-left: 5%;
+            outline: none;
+        }
+        
+        .side {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        }
+        
+        .up-head {
+            padding-left: 20px;
+        }
+        
+        #dob {
+            border: none;
+            border-bottom: solid 2px var(--main);
+            width: 83%;
+            padding: 10px;
+            font-family: monospace;
+            color: var(--main);
+            font-size: 1.1em;
+            margin-right: 5%;
+            margin-left: 5%;
+            outline: none;
+        }
+        
+        #reg {
+            font-family: monospace;
+            font-size: .8em;
+            color: var(--sec);
+            padding: 10px;
+        }
+        
+        #regi {
+            font-family: monospace;
+            text-decoration: none;
+            color: #89bcef;
+            font-size: 1.1em;
+        }
+        
+        #regi:hover {
+            font-family: monospace;
+            text-decoration: none;
+            color: #003e7c;
+            transition: 1s;
+            font-size: 1.2em;
+        }
+        
+        .last-button {
+            padding: 20px;
+            font-family: monospace;
+            color: var(--whi);
+            width: 45%;
+            margin-left: 3.5%;
+            background-color: var(--main);
+            border: none;
+            font-size: 1.4em;
+            border-radius: 10px;
+        }
+        
+        .last-button:hover {
+            padding: 20px;
+            font-family: monospace;
+            color: var(--whi);
+            width: 45%;
+            margin-left: 3.5%;
+            background-color: var(--hov);
+            transition: 2s;
+            border: none;
+            font-size: 1.4em;
+        }
+    </style>
+</head>
+
+<body bgcolor="#c9d1d5">
+    <header>
+        <div class="search">
+            <i class="fa fa-search" id="search-icon"></i>
+            <input id="search" type="search" placeholder="Search">
+        </div>
+
+        <div class="Logo">
+            <h1 id="heading"><span class="names">Harmonic</span> Shopping Center</h1>
+        </div>
+
+        <div class="head-nav">
+            <a href="log.html" class="icon"><i class="fa fa-user" aria-hidden="true" ></i><span class="log">Log-In</span></a>
+            <a href="cart.html" class="icon"><i class="fa fa-shopping-cart" aria-hidden="true" ></i><span class="log">Cart</span></a>
+        </div>
+    </header>
+    <nav>
+        <div class="nav-nav">
+            <a href="home.html" class="navv">Home</a>
+        </div>
+        <div class="nav-nav">
+            <a href="#" class="navv">Categories</a>
+        </div>
+        <div class="nav-nav">
+            <a href="#" class="navv">F.A.Q</a>
+        </div>
+        <div class="nav-nav">
+            <a href="#" class="navv">Contact</a>
+        </div>
+    </nav>
+
+    <form>
+        <h1 id="head">Register</h1>
+        <label for="surname">Surname:</label>
+        <input type="text" id="surnname" name="surname" minlength="2" maxlength="15" placeholder="Surname" required><br><br>
+        <label for="othername">Othernames:</label>
+        <input type="text" id="othername" name="othername" minlength="2" maxlength="25" placeholder="Othernames" required><br><br>
+
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" minlength="3" maxlength="10" placeholder="Username" required><br><br>
+
+        <div class="side">
+            <div>
+                <label for="phone">Phone Number:</label><br>
+                <span id="num">+234</span>
+                <input type="text" id="phone" placeholder="801 2345 678" maxlength="11" minlength="9"><br>
+            </div>
+
+            <div>
+                <label for="dob" class="up-head">Date Of Birth:</label>
+                <input type="date" id="dob" max="2010-01-01" min="1980-01-01"><br><br>
+            </div>
+        </div>
+
+        <div class="side">
+            <div>
+                <label for="password">Password:</label><br>
+                <input type="password" id="password" placeholder="Create password" minlength="5" maxlength="10" required><br>
+            </div>
+
+            <div>
+                <label for="gender" class="up-head">Select Your Gender:</label>
+                <select id="gender" name="Gender">
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+            <option value="Rather Not Say">Rather Not Say</option>
+        </select>
+            </div>
+        </div>
+        <br><br>
+
+
+        <input type="reset" value="Clear All" class="last-button"><input type="submit" value="Create Account" class="last-button">
+
+        <p id="reg">Already have an account <a href="log.html" id="regi">Log In</a></p>
+    </form>
+    <footer>
+        <marquee>
+            <Span id="last">For More Inquires Message 08134151807 on Whatsapp</Span>
+        </marquee>
+    </footer>
+</body>
+
+</html>
